@@ -36,23 +36,6 @@ public class Time
             }
         }
     }
-
-    public int AnoFundacao
-    {
-        get { return anoFundacao; }
-        set
-        {
-            if (value < 0)
-            {
-                Console.WriteLine("Ano de fundação inválido!");
-            }
-            else
-            {
-                anoFundacao = value;
-            }
-        }
-    }
-
     public int quantidadeTitulos
     {
         get { return quantidadeTitulos; }
@@ -69,7 +52,7 @@ public class Time
         }
     }
 
-    public time(string nome, string tecnico, int anoFundacao, int quantidadeTitulos)
+    public Time(string nome, string tecnico, int anoFundacao, int quantidadeTitulos)
     {
         Nome = nome;
         Tecnico = tecnico;

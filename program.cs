@@ -2,18 +2,18 @@
 {
     static void Main(string[] args)
     {
-        Jogador j1 = new Jogador("Messi", 39, "Atacante", 10);
-        Jogador j2 = new Jogador("Neymar Jr", 34, "Atacante", 10);
+        Jogador j1 = new Jogador("Thomas", 15, "meio campista", 10);
+        Jogador j2 = new Jogador("Gabriel Onofre", 15, "Atacante", 11);
 
-        j1.Posicao = "Ponta Direito";
+        j1.Posicao = "meia esquerda";
         j2.NumeroCamisa = 11;
 
         Console.WriteLine("=== JOGADORES ===");
         Console.WriteLine(j1);
         Console.WriteLine(j2);
 
-        Time t1 = new Time("Barcelona", "Hansi Flick", 5);
-        Time t2 = new Time("Real Madrid", "Carlo Ancelotti", 15);
+        Time t1 = new Time("2º MD", "Breno", 5);
+        Time t2 = new Time("1º DS", "Vicente", 15);
 
         t1.QuantidadeTitulos = 6; 
 
