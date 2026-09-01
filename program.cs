@@ -12,10 +12,10 @@
         Console.WriteLine(j1);
         Console.WriteLine(j2);
 
-        Time t1 = new Time("2º MD", "Breno", 5);
-        Time t2 = new Time("1º DS", "Vicente", 15);
+        Time t1 = new Time("2º MD", "Breno", 2020, 6);
+        Time t2 = new Time("1º DS", "Vicente", 2021, 15);
 
-        t1.QuantidadeTitulos = 6; 
+        t1.QuantidadeTitulos = 6;
 
         Console.WriteLine("=== TIMES ===");
         Console.WriteLine(t1);
@@ -23,10 +23,9 @@
         Console.WriteLine();
 
         Partida p1 = new Partida("Barcelona", "Real Madrid", 3, 2);
+        Partida p2 = new Partida("1º DS", "2º MD", 6, 1);
 
-        Partida p2 = new Partida("1º DS", "2ºMD", 6, 1);
-
-        p2.GolsMandante = 2;
+        p2.GolsTimeCasa = 6;
 
         Console.WriteLine("=== PARTIDAS ===");
         Console.WriteLine(p1);

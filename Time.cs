@@ -2,7 +2,7 @@ public class Time
 {
     private string nome;
     private string tecnico;
-    private int  anoFundacao;
+    private int anoFundacao;
     private int quantidadeTitulos;
 
     public string Nome
@@ -11,13 +11,9 @@ public class Time
         set
         {
             if (string.IsNullOrWhiteSpace(value))
-            {
-                Console.WriteLine("O nome do time não pode ser vazio!");
-            }
-            else
-            {
-                nome = value;
-            }
+                throw new ArgumentException("O nome do time não pode ser vazio!");
+
+            nome = value;
         }
     }
 
@@ -27,28 +23,33 @@ public class Time
         set
         {
             if (string.IsNullOrWhiteSpace(value))
-            {
-                Console.WriteLine("O nome do técnico não pode ser vazio!");
-            }
-            else
-            {
-                tecnico = value;
-            }
+                throw new ArgumentException("O nome do técnico não pode ser vazio!");
+
+            tecnico = value;
         }
     }
-    public int quantidadeTitulos
+
+    public int AnoFundacao
+    {
+        get { return anoFundacao; }
+        set
+        {
+            if (value < 1800) 
+                throw new ArgumentException("Ano de fundação inválido!");
+
+            anoFundacao = value;
+        }
+    }
+
+    public int QuantidadeTitulos
     {
         get { return quantidadeTitulos; }
         set
         {
             if (value < 0)
-            {
-                Console.WriteLine("Quantidade de títulos inválida!");
-            }
-            else
-            {
-                quantidadeTitulos = value;
-            }
+                throw new ArgumentException("Quantidade de títulos não pode ser negativa!");
+
+            quantidadeTitulos = value;
         }
     }
 
@@ -62,6 +63,6 @@ public class Time
 
     public override string ToString()
     {
-        return $"Nome: {Nome}, Técnico: {Tecnico}, Ano de Fundação: {AnoFundacao}, Quantidade de Títulos: {QuantidadeTitulos}";
+        return $"Nome: {Nome}, Técnico: {Tecnico}, Ano de Fundação: {AnoFundacao}, Títulos: {QuantidadeTitulos}";
     }
 }
