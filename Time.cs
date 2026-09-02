@@ -61,6 +61,7 @@ public class Time
         QuantidadeTitulos = quantidadeTitulos;
     }
 
+/// serve para exibir o objeto
     public override string ToString()
     {
         return $"Nome: {Nome}, Técnico: {Tecnico}, Ano de Fundação: {AnoFundacao}, Títulos: {QuantidadeTitulos}";

@@ -77,6 +77,7 @@ public class Jogador
         NumeroCamisa = numeroCamisa;
     }
 
+/// serve para exibir um objeto
     public override string ToString()
     {
         return $"Jogador: {Nome} | Idade: {Idade} | Posição: {Posicao} | Camisa: {NumeroCamisa}";

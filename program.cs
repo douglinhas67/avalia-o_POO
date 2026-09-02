@@ -1,6 +1,8 @@
 ﻿class Program
 {
-    static void Main(string[] args)
+
+/// é o ponto de partida. qunado der play vai automaticamente priorizar essa parte do cdg 
+   static void Main(string[] args)
     {
         Jogador j1 = new Jogador("Thomas", 15, "meio campista", 10);
         Jogador j2 = new Jogador("Gabriel Onofre", 15, "Atacante", 11);
