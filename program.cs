@@ -32,5 +32,16 @@
         Console.WriteLine("=== PARTIDAS ===");
         Console.WriteLine(p1);
         Console.WriteLine(p2);
+        Console.WriteLine();
+
+        Jogador jogadorVelho = new Jogador("Gabriel Onofre", 35, "Atacante", 9);
+        jogadorVelho.IsVelho();
+
+        Time timeVelho = new Time("1° DS", "Técnico Experiente", 1940, 10);
+        timeVelho.IsTimeVelho();
+
+        Partida partidaEmpate = new Partida("Fluminense", "Internacional", 2, 2);
+        partidaEmpate.IsEmpate();
     }
+
 }

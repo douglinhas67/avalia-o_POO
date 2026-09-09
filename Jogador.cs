@@ -82,4 +82,17 @@ public class Jogador
     {
         return $"Jogador: {Nome} | Idade: {Idade} | Posição: {Posicao} | Camisa: {NumeroCamisa}";
     }
+
+    public void IsVelho()
+    {
+        if (Idade >= 30)
+        {
+            Console.WriteLine($"{Nome} é considerado um jogador velho.");
+        }
+        else
+        {
+            Console.WriteLine($"{Nome} não é considerado um jogador velho.");
+        }
+    }
+
 }

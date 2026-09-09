@@ -66,4 +66,17 @@ public class Time
     {
         return $"Nome: {Nome}, Técnico: {Tecnico}, Ano de Fundação: {AnoFundacao}, Títulos: {QuantidadeTitulos}";
     }
+
+
+    public void IsTimeVelho()
+    {
+        if (AnoFundacao <= 1950)
+        {
+            Console.WriteLine($"{Nome} é considerado um time velho.");
+        }
+        else
+        {
+            Console.WriteLine($"{Nome} não é considerado um time velho.");
+        }
+    }
 }

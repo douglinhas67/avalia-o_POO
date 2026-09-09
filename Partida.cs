@@ -82,4 +82,16 @@ public class Partida
     {
         return $"Partida: {TimeCasa} vs {TimeVisitante} - {GolsTimeCasa} x {GolsTimeVisitante}";
     }
+
+    public void IsEmpate()
+    {
+        if (GolsTimeCasa == GolsTimeVisitante)
+        {
+            Console.WriteLine($"A partida entre {TimeCasa} e {TimeVisitante} terminou em empate.");
+        }
+        else
+        {
+            Console.WriteLine($"A partida entre {TimeCasa} e {TimeVisitante} não terminou em empate.");
+        }
+    }
 }
