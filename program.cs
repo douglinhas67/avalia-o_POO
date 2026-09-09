@@ -1,7 +1,7 @@
 ﻿class Program
 {
 
-/// é o ponto de partida. qunado der play vai automaticamente priorizar essa parte do cdg 
+// é o ponto de partida. qunado der play vai automaticamente priorizar essa parte do cdg 
    static void Main(string[] args)
     {
         Jogador j1 = new Jogador("Thomas", 15, "meio campista", 10);
